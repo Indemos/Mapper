@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Libs\DataMapper.csproj" />
+    <ProjectReference Include="..\Libs\ExpressionMapper.csproj" />
   </ItemGroup>
 
 </Project>
