@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Description>Simpler alternative to Automapper.</Description>
+    <Authors>artemiusgreat</Authors>
+    <Copyright>indemos.com</Copyright>
+    <PackageProjectUrl>http://indemos.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Indemos/Mapper</RepositoryUrl>
+    <PackageTags>mapper automapper merge clone copy</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
