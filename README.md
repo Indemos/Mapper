@@ -1,6 +1,12 @@
-# Mapper
+# Expression Mapper
 
-Simpler alternative to Automapper. 
+Simpler alternative to Automapper using compiled expressions. 
+
+# Status
+
+```
+Install-Package ExpressionMapper
+```
 
 **Available options** 
 

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "Libs\Mapper.csproj", "{1F26513E-BC92-4542-9F03-DE6AC300F0B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionMapper", "Libs\ExpressionMapper.csproj", "{1F26513E-BC92-4542-9F03-DE6AC300F0B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{8F5EC316-8488-472F-B748-D02CA7FEC1AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{8F5EC316-8488-472F-B748-D02CA7FEC1AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
