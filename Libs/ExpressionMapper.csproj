@@ -9,7 +9,7 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Description>Simpler alternative to Automapper.</Description>
     <Authors>artemiusgreat</Authors>
     <Copyright>indemos.com</Copyright>

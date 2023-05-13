@@ -59,9 +59,12 @@ namespace Mapper
       {
         if (sourceMembers.TryGetValue(o.Name, out var sourceProperty))
         {
-          return sourceProperty.Type.IsValueType ?
-            Expression.Bind(o, sourceProperty) :
-            Expression.Bind(o, Expression.Coalesce(sourceProperty, Expression.Property(output, o)));
+          var isValue = sourceProperty.Type.IsValueType;
+          var isNullable = Nullable.GetUnderlyingType(sourceProperty.Type);
+
+          return isNullable is not null || isValue is false ?
+            Expression.Bind(o, Expression.Coalesce(sourceProperty, Expression.Property(output, o))) :
+            Expression.Bind(o, sourceProperty);
         }
 
         return Expression.Bind(o, Expression.Property(output, o));

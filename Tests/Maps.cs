@@ -7,12 +7,14 @@ namespace Tests
     public class A
     {
       public int Id { get; set; }
+      public int? Count { get; set; }
       public string Name { get; set; }
     }
 
     public class B
     {
       public int Id { get; set; }
+      public int? Count { get; set; }
       public string Name { get; set; }
       public string Description { get; set; }
       public A Link { get; set; }
@@ -35,11 +37,12 @@ namespace Tests
     public void Merge()
     {
       var source = new A { Id = 1 };
-      var destination = new B { Id = 2, Name = "2", Link = new A { Id = 3 }};
+      var destination = new B { Id = 2, Count = 5, Name = "2", Link = new A { Id = 3 }};
 
       var merge = Mapper<A, B>.Merge(source, destination);
 
       Assert.Equal(1, merge.Id);
+      Assert.Equal(5, merge.Count);
       Assert.Equal("2", merge.Name);
       Assert.Equal(3, merge.Link.Id);
       Assert.Equal(destination.Link, merge.Link);
