@@ -10,6 +10,6 @@ Install-Package ExpressionMapper
 
 **Available options** 
 
-- Copy : creates a shallow copy of the entity 
-- Map : maps properties from source to destination entity 
-- Merge : maps properties from source to destination entity if not null 
+- Copy: creates a shallow copy of the entity 
+- Map: maps properties from source to destination 
+- Merge: maps properties from source to destination if not null 
