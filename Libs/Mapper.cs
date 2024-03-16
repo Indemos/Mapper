@@ -62,7 +62,7 @@ namespace Mapper
           var isValue = sourceProperty.Type.IsValueType;
           var isNullable = Nullable.GetUnderlyingType(sourceProperty.Type);
 
-          return isNullable is not null || isValue is false ?
+          return isNullable != null || isValue is false ?
             Expression.Bind(o, Expression.Coalesce(sourceProperty, Expression.Property(output, o))) :
             Expression.Bind(o, sourceProperty);
         }
